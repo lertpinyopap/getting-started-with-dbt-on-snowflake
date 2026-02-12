@@ -7,7 +7,7 @@ tasty_bytes:
       user: 'github_actions_service_user'
       role: github_actions_role
       database: tasty_bytes_dbt_db
-      schema: dev
+      schema: DEV
       warehouse: tasty_bytes_dbt_wh
     prod:
       type: snowflake
