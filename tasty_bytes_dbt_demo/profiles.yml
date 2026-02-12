@@ -5,7 +5,7 @@ tasty_bytes:
       type: snowflake
       account: 'QZSYJYT-ALB66033.snowflakecomputing.com'
       user: 'github_user'
-      password: ${{ secrets.SNOWFLAKE_PASSWORD }}
+      password: '{{ env_var("SNOWFLAKE_PASSWORD") }}'
       role: GITHUB_ACTIONS_ROLE
       database: tasty_bytes_dbt_db
       schema: DEV
