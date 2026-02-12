@@ -6,7 +6,7 @@ tasty_bytes:
       account: 'QZSYJYT-ALB66033.snowflakecomputing.com'
       user: 'github_user'
       password: ${{ secrets.SNOWFLAKE_PASSWORD }}
-      role: ACCOUNTADMIN
+      role: GITHUB_ACTIONS_ROLE
       database: tasty_bytes_dbt_db
       schema: DEV_DBT
       warehouse: tasty_bytes_dbt_wh
