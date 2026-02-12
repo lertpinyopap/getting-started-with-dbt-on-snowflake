@@ -4,7 +4,8 @@ tasty_bytes:
     dev:
       type: snowflake
       account: 'QZSYJYT-ALB66033.snowflakecomputing.com'
-      user: 'github_actions_service_user'
+      user: 'github_user'
+      password: ${{ secrets.SNOWFLAKE_PASSWORD }}
       role: ACCOUNTADMIN
       database: tasty_bytes_dbt_db
       schema: DEV_DBT
