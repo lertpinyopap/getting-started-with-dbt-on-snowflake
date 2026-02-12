@@ -20,7 +20,7 @@ jobs:
       SNOWFLAKE_USER: ${{ vars.SNOWFLAKE_USER }}       # your normal user
       SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }} # Snowflake password is required if you aren't using OIDC
       SNOWFLAKE_DATABASE: tasty_bytes_dbt_db
-      SNOWFLAKE_SCHEMA: DEV_DBT
+      SNOWFLAKE_SCHEMA: DEV
 
     steps:
       # Check out repository code
