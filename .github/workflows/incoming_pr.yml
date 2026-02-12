@@ -30,8 +30,8 @@ jobs:
 
       - name: Install Snowflake CLI
         uses: snowflakedb/snowflake-cli-action@v2.0
-        with: # Ensures Snowflake CLI will search for OIDC users matching this subject
-          use-oidc: true
+        #with: # Ensures Snowflake CLI will search for OIDC users matching this subject
+        #  use-oidc: true
 
       - name: Check Snowflake CLI Version
         run: snow --version
