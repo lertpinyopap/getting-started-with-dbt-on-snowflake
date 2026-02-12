@@ -3,11 +3,12 @@ tasty_bytes:
   outputs:
     dev:
       type: snowflake
-      account: 'not needed'
-      user: 'not needed'
-      role: accountadmin
+      account: 'QZSYJYT-ALB66033.snowflakecomputing.com'
+      user: 'github_user'
+      password: '{{ env_var("SNOWFLAKE_PASSWORD") }}'
+      role: GITHUB_ACTIONS_ROLE
       database: tasty_bytes_dbt_db
-      schema: dev
+      schema: DEV
       warehouse: tasty_bytes_dbt_wh
     prod:
       type: snowflake
